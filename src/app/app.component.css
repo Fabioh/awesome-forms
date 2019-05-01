@@ -1,8 +1,16 @@
-.example-icon {
+.icon {
   padding: 0 14px;
   cursor: pointer;
 }
 
-.example-spacer {
+.spacer {
   flex: 1 1 auto;
+}
+
+.container {
+  padding: 5px;
+}
+
+button {
+  margin-top: 5px;
 }
