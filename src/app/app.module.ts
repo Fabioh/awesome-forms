@@ -8,6 +8,7 @@ import { FormlyMaterialModule } from '@ngx-formly/material';
 
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material';
+import { IpValidator, IpValidatorMessage } from 'src/app/util/validation';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,15 @@ import { MaterialModule } from './material';
     BrowserModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    FormlyModule.forRoot(),
+    FormlyModule.forRoot({
+      validators: [
+        { name: 'ip', validation: IpValidator },
+      ],
+      validationMessages: [
+        { name: 'ip', message: IpValidatorMessage },
+        { name: 'required', message: 'This field is required' },
+      ],
+    }),
     FormlyMaterialModule,
     MaterialModule,
   ],

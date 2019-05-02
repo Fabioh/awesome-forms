@@ -1,11 +1,14 @@
 import { FormlyFieldConfig } from '@ngx-formly/core';
 
+import { IpValidator, IpValidatorMessage, IpAsyncValidator } from 'src/app/util/validation';
+
 export class Contact {
   name: string;
   phoneNumber: string;
   email: string;
+  ipAddress: string;
 
-  formFields(): FormlyFieldConfig[] {
+  static formFields(): FormlyFieldConfig[] {
     return [
       {
         key: 'name',
@@ -48,9 +51,25 @@ export class Contact {
         },
         validation: {
           messages:  {
-            required: 'You need to provide a email address!'
+            required: 'You need to provide an email address!'
           }
         }
+      },
+      {
+        key: 'ipAddress',
+        type: 'input',
+        templateOptions: {
+          type: 'text',
+          label: 'IP Address (using custom validation declared in ngModule)',
+          placeholder: 'Ip',
+          required: true,
+        },
+        validators: {
+          validation: ['ip']
+        }
+        // asyncValidators: {
+        //   validation: [IpAsyncValidator],
+        // }
       }
     ] as FormlyFieldConfig[];
   }

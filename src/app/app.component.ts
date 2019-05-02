@@ -18,7 +18,7 @@ export class AppComponent implements OnInit {
   fields: FormlyFieldConfig[];
 
   ngOnInit() {
-    this.fields = this.contactModel.formFields();
+    this.fields = Contact.formFields();
   }
 
   contactFormInvalid(): boolean {
