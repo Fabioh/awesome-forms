@@ -10,11 +10,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
+import { FrameComponent } from './pages/master/frame/frame.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    FrameComponent
   ],
   imports: [
     BrowserModule,
