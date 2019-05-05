@@ -1,0 +1,7 @@
+<div class="container">
+  <form [formGroup]="contactForm" (ngSubmit)="submit(contactModel)">
+    <formly-form [form]="contactForm" [fields]="fields" [model]="contactModel">
+      <button [disabled]="contactFormInvalid()" type="submit" mat-raised-button>Submit form</button>
+    </formly-form>
+  </form>
+</div>

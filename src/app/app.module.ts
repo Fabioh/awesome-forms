@@ -12,13 +12,15 @@ import { MaterialModule } from './material';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FrameComponent } from './pages/master/frame/frame.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
+import { ContactFormComponent } from './pages/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FrameComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
