@@ -11,12 +11,14 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material';
 import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FrameComponent } from './pages/master/frame/frame.component';
+import { WelcomeComponent } from './pages/welcome/welcome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    FrameComponent
+    FrameComponent,
+    WelcomeComponent
   ],
   imports: [
     BrowserModule,
