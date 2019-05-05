@@ -4,8 +4,8 @@
     <span class="spacer"></span>
     <mat-icon class="icon" aria-hidden="false" [matMenuTriggerFor]="menu">menu</mat-icon>
     <mat-menu #menu="matMenu">
-      <button mat-menu-item>Item 1</button>
-      <button mat-menu-item>Item 2</button>
+      <a [routerLink]="['/contact']" mat-menu-item>Contact</a>
+      <a mat-menu-item>Item 2</a>
     </mat-menu>
   </mat-toolbar-row>
 </mat-toolbar>
