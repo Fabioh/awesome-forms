@@ -3,6 +3,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { FormlyModule } from '@ngx-formly/core';
 import { FormlyMaterialModule } from '@ngx-formly/material';
 
@@ -13,6 +15,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FrameComponent } from './pages/master/frame/frame.component';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { ContactFormComponent } from './pages/contact-form/contact-form.component';
+
 
 @NgModule({
   declarations: [
@@ -30,6 +33,7 @@ import { ContactFormComponent } from './pages/contact-form/contact-form.componen
     FormlyMaterialModule,
     MaterialModule,
     AppRoutingModule,
+    FlexLayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
