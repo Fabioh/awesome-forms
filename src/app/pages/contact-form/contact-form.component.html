@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container" fxLayout="row" fxLayoutAlign="center">
   <form [formGroup]="contactForm" (ngSubmit)="submit(contactModel)">
     <formly-form [form]="contactForm" [fields]="fields" [model]="contactModel">
       <button [disabled]="contactFormInvalid()" type="submit" mat-raised-button>Submit form</button>
